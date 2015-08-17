@@ -28,7 +28,7 @@ namespace TSTestAdapter
             RunTests(tests, runContext, frameworkHandle);
         }
 
-        public void RunTests(IEnumerable<Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase> tests, IRunContext runContext, IFrameworkHandle frameworkHandle)
+        public void RunTests(IEnumerable<TestCase> tests, IRunContext runContext, IFrameworkHandle frameworkHandle)
         {
             var olock = new Object();
             var cache = new Dictionary<string, string>();
