@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="TSTestAdapter.aee659b4-3b0a-4667-bd9f-c3ce49b0058d" Version="1.0" Language="en-US" Publisher="brunolm" />
-    <DisplayName>TSTestAdapter (TypeScript Unit Test)</DisplayName>
-    <Description xml:space="preserve">Adds Unit Test support for TypeScript. It uses PhantomJS to run the tests. Requires TypeScript to be installed and `tsc.exe` registered on path.</Description>
-    <Tags>TypeScript, Unit Test, Javascript, Test Explorer, Testing</Tags>
-  </Metadata>
-  <Installation InstalledByMsi="false">
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="11.0" />
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
-    <Dependency Id="Microsoft.VisualStudio.MPF.11.0" DisplayName="Visual Studio MPF 11.0" d:Source="Installed" Version="11.0" />
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="TSTestAdapter" Path="|TSTestAdapter|" />
-    <Asset Type="UnitTestExtension" d:Source="Project" d:ProjectName="TSTestAdapter" Path="|TSTestAdapter|" />
-  </Assets>
+	<Metadata>
+		<Identity Id="TSTestAdapter.aee659b4-3b0a-4667-bd9f-c3ce49b0058d" Version="1.0" Language="en-US" Publisher="brunolm" />
+		<DisplayName>TSTestAdapter (TypeScript Unit Test)</DisplayName>
+		<Description xml:space="preserve">Adds Unit Test support for TypeScript. It uses PhantomJS to run the tests. Requires TypeScript to be installed and `tsc.exe` registered on path.</Description>
+		<Tags>TypeScript, Unit Test, Javascript, Test Explorer, Testing</Tags>
+	</Metadata>
+	<Installation InstalledByMsi="false">
+		<InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Community" />
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+		<Dependency Id="Microsoft.VisualStudio.MPF.11.0" DisplayName="Visual Studio MPF 11.0" d:Source="Installed" Version="11.0" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="TSTestAdapter" Path="|TSTestAdapter|" />
+		<Asset Type="UnitTestExtension" d:Source="Project" d:ProjectName="TSTestAdapter" Path="|TSTestAdapter|" />
+	</Assets>
 </PackageManifest>
